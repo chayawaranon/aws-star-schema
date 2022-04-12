@@ -18,7 +18,7 @@ This Glue workflow is scheduled manually. Firstly, we have to update metadata fr
 ![table-structure-redshift](https://user-images.githubusercontent.com/48947748/162724205-09ca5a26-37ac-4ce1-bbde-8fa7e3af8e21.png)
 
 |date      |year|	month	   |month_of_year|day     |day_of_week|is_week_day|day_of_month|day_of_year|week_of_year|quarter_of_year|
-|----------|----|----------|-------------|--------|-----------|-----------|------------|-----------|------------|---------------|
+|---------------|----|----------|-------------|--------|-----------|-----------|------------|-----------|------------|---------------|
 |2019-07-02|2019|	July	   |7            |Tuesday	|2          |Y          |	2          |183        |27          |	3	            |
 |2017-05-20|2017|	May	     |5            |Saturday|6          |N          |	20         |140        |20          |	2		          |
 |2014-06-05|2014|	June	   |6            |Thursday|4          |Y          |	5          |156        |23          |	2		          |
