@@ -11,11 +11,13 @@ Data sources from the MySQL database on Amazon RDS are ingested to S3 to store r
 This Glue workflow is scheduled manually. Firstly, we have to update metadata from MySQL and Redshift in Glue and when the update succeeded, we store raw data to S3 then transform data to create a star schema and store it back to S3 and also ingest it to Redshift.
 
 ## DATA MODEL:
-The ER-diagram for Backend look like following image.
+The ERD for Backend look like following image.
 Tables: `users` `orders` `symbols`
 ![old_schema](https://user-images.githubusercontent.com/48947748/162782767-4961ce2f-ced2-4485-9f80-5d8f85f195f9.jpg) <br />
+
+The ERD for star schema look like following image.
 Dimensional Tables : `dim_dates` `dim_symbols` `dim_users` `jnk_dim_orders` <br />
-Fact Table : `fact_orders`
+Fact Table : `fact_orders`<br />
 ![star-schema](https://user-images.githubusercontent.com/48947748/162780855-ee75be05-4ab4-4458-95d2-ea3ef9e4c8d4.jpg)
 
 ## SAMPLE DATA:
